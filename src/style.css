@@ -1,1 +1,26 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.gks-carta {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px 20px 20px 20px;
+}
+.rotate {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+.gks-hearts {
+  color: red;
+}
+.gks-diams {
+  color: red;
+}
+.gks-clubs {
+  color: black;
+}
+.gks-spades {
+  color: black;
+}
