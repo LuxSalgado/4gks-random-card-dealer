@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body onload="myFunction()">
+    <!-- Se ejecuta al cargar la pagina -->
     <div class="container-fluid bg-success d-flex justify-content-center">
-      <div class="gks-carta d-flex">
+      <div class="gks-carta d-flex" id="naipe">
         <div class="align-self-start mr-auto ml-3 mt-0">
           <h1 class="display-2 pintaCarta"></h1>
         </div>
@@ -28,6 +29,40 @@
         <div class="align-self-end ml-auto mr-3 mb-0">
           <h1 class="display-2 rotate pintaCarta"></h1>
         </div>
+      </div>
+    </div>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center pt-4"
+    >
+      <button type="button" id="botonCarta" class="btn btn-primary">
+        ¡Otra carta!
+      </button>
+      <h5 class="px-4 m-3" id="segundos"></h5>
+      <div
+        class="d-flex flex-column justify-content-center border rounded border-dark p-3"
+      >
+        <form>
+          <h5>Cambiar las dimensiones de la carta:</h5>
+          <label class="h6" for="altoCarta">Alto de carta (pixeles):</label>
+          <input
+            type="number"
+            id="altoCarta"
+            name="altoCarta"
+            value=""
+            placeholder="Valor entre 100 y 1260"
+          /><br />
+          <label class="h6" for="anchoCarta">Ancho de carta (pixeles):</label>
+          <input
+            type="number"
+            id="anchoCarta"
+            name="anchoCarta"
+            value=""
+            placeholder="Valor entre 200 y 900"
+          />
+        </form>
+        <button type="button" id="botonTamano" class="btn btn-info">
+          ¡Cambiar tamaño!
+        </button>
       </div>
     </div>
   </body>
